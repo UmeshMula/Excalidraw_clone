@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Noto+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+/* Style the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the left section (menu toggle) */
+.left {
+  flex: 1;
+  padding-left: 15px;
+}
+#menu-btn {
+  width: 35px;
+  height: 35px;
+  font-size: 12px;
+  color: #7a7a7a;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid #d6d6d6;
+}
+
+/* Style the middle section (menu options) */
+.middle {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center; /* Center the icons vertically */
+  padding: 13px;
+  padding-bottom: 5px;
+}
+nav {
+  padding: 5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Center the icons vertically within the flex container */
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: 0px 0px 10px -1px rgba(71, 62, 62, 0.24);
+  -webkit-box-shadow: 0px 0px 10px -1px rgba(71, 62, 62, 0.24);
+  -moz-box-shadow: 0px 0px 10px -1px rgba(71, 62, 62, 0.24);
+}
+
+nav li {
+  margin: 3px; /* Add margin to create space between icons */
+  padding: 10px;
+  font-size: 14px;
+}
+
+nav i {
+  color: #858585;
+  text-decoration: none;
+  height: 100%; /* Set the icon height to 100% */
+}
+
+.list-item {
+  display: flex;
+  justify-content: center; /* Center the icon horizontally */
+  align-items: center; /* Center the icon vertically */
+  background-color: #e3e2fe; /* Set the background color */
+  padding: 10px 12px; /* Add padding to create space around the icon */
+  list-style: none; /* Remove the list-style (bullet point) */
+  border-radius: 8px;
+}
+
+.v-line {
+  height: 20px;
+  border-left: 2px solid #d6d6d6;
+  margin: 0 10px; /* Adjust margin for spacing between the vertical lines */
+}
+
+nav ul :hover {
+  cursor: pointer;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+/* Style the right section (collaboration and library icons) */
+.right {
+  flex: 1;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#collaboration {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: #6965db; /* Set the background color */
+  padding: 10px; /* Add padding to create space around the icon */
+  list-style: none; /* Remove the list-style (bullet point) */
+  border-radius: 8px;
+}
+#library {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #676767;
+  border: 1px solid #d6d6d6;
+  padding: 10px;
+  border-radius: 8px;
+}
+.fa-book-open {
+  margin-right: 10px;
+  font-family: "Noto Sans", sans-serif;
+}
+.header-text {
+  text-align: center;
+  font-size: 12px;
+  color: #bbbbbb;
+  font-family: "Mukta", sans-serif;
+}
+
+/* ----------------------------main-Style-------------------------- */
+.centered-content {
+  display: flex;
+  align-items: stretch; /* Change to move the content up */
+  justify-content: center;
+  height: auto;
+  margin-top: 70px;
+}
+
+.center-column {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Heading and sub-heading styles */
+.heading h1 {
+  font-size: 28px;
+  font-weight: 500px;
+  color: #190064;
+  font-family: "Mochiy Pop P One", sans-serif;
+  margin-bottom: 20px;
+}
+.fa-pen-ruler {
+  color: #6965db;
+  font-size: 35px;
+  margin-right: 8px;
+}
+.sub-heading h2 {
+  font-size: 18px; /* Increase font size */
+  color: #b8b8b8;
+  margin-bottom: 20px;
+  font-family: "Over the Rainbow", cursive;
+}
+
+/* Unordered list styles */
+.center-column ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.center-column ul li {
+  margin-bottom: 20px;
+  color: #999999;
+  font-family: "Mukta", sans-serif;
+  text-align: left;
+  padding-inline: 30px;
+}
+
+.center-column ul li i {
+  margin-right: 15px;
+  font-size: 15px; /* Adjust the size as needed */
+}
+
+.center-column a {
+  text-decoration: none;
+  font-size: small;
+  color: #999999;
+  display: inline-block;
+  font-family: "Mukta", sans-serif;
+}
+.gift-icon {
+  -webkit-text-stroke: 0.5px black; /* Add an outline using text-stroke */
+  color: transparent;
+}
+
+.center-column ul li .space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #999999;
+  font-family: "Mukta", sans-serif;
+}
+
+.center-column ul li .space a {
+  text-decoration: none;
+  color: #999999;
+  font-family: "Mukta", sans-serif;
+}
+
+.center-column ul li .space p {
+  margin: 0;
+  padding-right: 40px;
+  font-size: small;
+}
+
+/* Style for the footer */
+footer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-inline: 10px;
+    margin-top: 8px; */
+  }
+  /* Style for the individual footer divs */
+  .footer-div1 {
+    text-align: left;
+    border: 0.5px solid #d6d6d6; /* Add border to div1 */
+    padding: 8px; /* Add padding to div1 */
+    border-radius: 8px;
+  }
+
+  .footer-div1 span {
+    font-size: 20px;
+    margin: 8px;
+    border-right: 0.5px solid #d6d6d6; /* Add vertical line between icons */
+  }
+  
+  /* Style for the undo and redo icons in the second div */
+  .footer-div1 i.fa-undo,
+  .footer-div1 i.fa-redo {
+    /* Correct the class names here */
+    font-size: 15px;
+    margin: 0 10px;
+  }
+  
+  /* Style for the collaboration and library buttons in the third div */
+  .footer-div3 {
+    text-align: right;
+  }
+  
+  .collaboration1,
+  #library {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  .collaboration1 i {
+    font-weight: 900;
+    font-size: 15px;
+    color: #6965db;
+  }
+  
+  /* Additional styling for the library button */
+  #library {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #676767;
+    border: 1px solid #d6d6d6;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  
+
+
+
