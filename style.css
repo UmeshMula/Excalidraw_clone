@@ -14,6 +14,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  top: 10px;
+  position: sticky;
 }
 
 /* Style the left section (menu toggle) */
@@ -38,7 +40,7 @@ header {
   justify-content: center; /* Center the icons horizontally */
   align-items: center; /* Center the icons vertically */
   padding: 13px;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
 }
 nav {
   padding: 5px;
@@ -141,6 +143,7 @@ nav ul :hover {
 .center-column {
   text-align: center;
   padding: 20px;
+  cursor: pointer;
 }
 
 /* Heading and sub-heading styles */
@@ -215,69 +218,106 @@ nav ul :hover {
   font-size: small;
 }
 
-/* Style for the footer */
 footer {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* margin-inline: 10px;
-    margin-top: 8px; */
-  }
-  /* Style for the individual footer divs */
-  .footer-div1 {
-    text-align: left;
-    border: 0.5px solid #d6d6d6; /* Add border to div1 */
-    padding: 8px; /* Add padding to div1 */
-    border-radius: 8px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* bottom: 5px; */
+  margin-top: 20px;
+}
 
-  .footer-div1 span {
-    font-size: 20px;
-    margin: 8px;
-    border-right: 0.5px solid #d6d6d6; /* Add vertical line between icons */
-  }
-  
-  /* Style for the undo and redo icons in the second div */
-  .footer-div1 i.fa-undo,
-  .footer-div1 i.fa-redo {
-    /* Correct the class names here */
-    font-size: 15px;
-    margin: 0 10px;
-  }
-  
-  /* Style for the collaboration and library buttons in the third div */
-  .footer-div3 {
-    text-align: right;
-  }
-  
-  .collaboration1,
-  #library {
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-right: 15px;
-  }
-  
-  .collaboration1 i {
-    font-weight: 900;
-    font-size: 15px;
-    color: #6965db;
-  }
-  
-  /* Additional styling for the library button */
-  #library {
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-right: 10px;
-    color: #676767;
-    border: 1px solid #d6d6d6;
-    padding: 10px;
-    border-radius: 8px;
-  }
-  
-  
+.f-div {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 5px;
+}
 
+/* Style for the individual footer divs */
+.footer-div1 {
+  display: flex; /* Make .footer-div1 a flex container */
+  justify-content: space-between; /* Space the contents within .footer-div1 */
+  align-items: center; /* Center align the contents vertically */
+  text-align: left;
+  border: 0.5px solid #d6d6d6;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #ececf4;
+  cursor: pointer;
+}
 
+.footer-icons {
+  border: 0.5px solid #d6d6d6;
+  padding: 8px;
+  border-radius: 8px;
+  align-items: center;
+  background-color: #ececf4;
+  margin-inline: 10px;
+  cursor: pointer;
+}
+.footer-icons span {
+  color: #505055;
+}
+.footer-icons span .fa-minus {
+  font-size: 13px;
+  padding-right: 15px;
+  /* font-weight: lighter; */
+}
+.footer-icons span .fa-plus {
+  font-size: 13px;
+  padding-left: 15px;
+  font-weight: lighter;
+}
+.footer-div1 i.fa-redo {
+  margin-left: 30px;
+}
 
+.footer-div1 i {
+  margin: 2px 0;
+}
+.footer-icons span :hover{
+background-color: #6965db;
+}
+.footer-div1 i.fa-undo,
+.footer-div1 i.fa-redo {
+  font-size: 13px;
+  color: #505055;
+  /* font-weight: lighter; */
+}
+
+/* Style for the collaboration and library buttons in the third div */
+.footer-div3 {
+  text-align: right;
+  display: flex; /* Make .footer-div1 a flex container */
+  justify-content: space-between; /* Space the contents within .footer-div1 */
+  align-items: center; /* Center align the contents vertically */
+  padding: 8px;
+  cursor: pointer;
+}
+
+.collaboration1,
+#library {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.collaboration1 i {
+  font-weight: 900;
+  font-size: 18px;
+  color: #6965db;
+}
+
+/* Additional styling for the library button */
+#library {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #676767;
+  border: 1px solid #d6d6d6;
+  padding: 10px;
+  border-radius: 8px;
+}
