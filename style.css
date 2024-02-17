@@ -2,56 +2,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Noto+Sans:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
 }
 
 /* Style the header */
-header {
+.total-body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+.topper {
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  top: 10px;
-  position: sticky;
+  position: fixed;
+  width: 100vw;
+  cursor: grab;
+  z-index: 10;
+  padding: 10px 16px;
+  /* margin-left: 5px; */
 }
 
 /* Style the left section (menu toggle) */
 .left {
   flex: 1;
-  padding-left: 15px;
+  margin-bottom: 8px;
 }
 #menu-btn {
-  width: 35px;
-  height: 35px;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: lighter;
   color: #7a7a7a;
-  cursor: pointer;
-  border-radius: 8px;
-  background-color: transparent;
-  border: 1px solid #d6d6d6;
+  border-radius: 7px;
+  background-color: #ececf4;
+  border: 1px #d6d6d6;
+  padding: 10px 12px;
 }
 
-/* Style the middle section (menu options) */
 .middle {
   display: flex;
   justify-content: center; /* Center the icons horizontally */
   align-items: center; /* Center the icons vertically */
-  padding: 13px;
-  padding-bottom: 8px;
-}
-nav {
-  padding: 5px;
 }
 
-nav ul {
-  list-style: none;
+
+.middle-btn {
+  justify-content: space-between;
   display: flex;
   align-items: center; /* Center the icons vertically within the flex container */
-  margin: 0;
-  padding: 0;
+  margin: 5px 0;
+  padding: 2px 0;
   border-radius: 10px;
   background-color: transparent;
   box-shadow: 0px 0px 10px -1px rgba(71, 62, 62, 0.24);
@@ -59,133 +66,180 @@ nav ul {
   -moz-box-shadow: 0px 0px 10px -1px rgba(71, 62, 62, 0.24);
 }
 
-nav li {
-  margin: 3px; /* Add margin to create space between icons */
-  padding: 10px;
-  font-size: 14px;
+.middle-btn button {
+  padding: 10px 8px;
+  border: none;
+  margin: 2px;
 }
-
-nav i {
-  color: #858585;
-  text-decoration: none;
+button{
+  background: transparent;
+}
+.middle-btn button i {
+  color: #515154;
+  border: none;
   height: 100%; /* Set the icon height to 100% */
+  font-size: 15px;
+  font-weight: bolder;
 }
 
 .list-item {
   display: flex;
   justify-content: center; /* Center the icon horizontally */
   align-items: center; /* Center the icon vertically */
-  background-color: #e3e2fe; /* Set the background color */
-  padding: 10px 12px; /* Add padding to create space around the icon */
-  list-style: none; /* Remove the list-style (bullet point) */
+  background-color: #e0dfff; /* Set the background color */
   border-radius: 8px;
 }
-
+.lock{
+  margin-inline: 2px;
+}
 .v-line {
-  height: 20px;
-  border-left: 2px solid #d6d6d6;
-  margin: 0 10px; /* Adjust margin for spacing between the vertical lines */
+  height: 25px;
+  border-left: 1px solid #f1f0ff;
+  margin: 5px 0; /* Adjust margin for spacing between the vertical lines */
 }
 
-nav ul :hover {
+.middle-btn button:hover {
   cursor: pointer;
-  background-color: #f5f5f5;
+  background-color: #eaedff;
   border-radius: 8px;
+  height: auto;
+  width: auto;
+}
+.sn {
+  padding-left: 2px;
+  font-size: 0.7em;
+  font-family: "Open Sans", sans-serif;
+  color: #515154;
+  font-weight: 100;
 }
 
 /* Style the right section (collaboration and library icons) */
 .right {
   flex: 1;
   text-align: right;
-  padding-right: 10px;
+  padding-right: 28px;
+ 
 }
 
 #collaboration {
   background: none;
   border: none;
-  cursor: pointer;
-  margin-right: 10px;
+  margin-right: 5px;
   background-color: #6965db; /* Set the background color */
-  padding: 10px; /* Add padding to create space around the icon */
-  list-style: none; /* Remove the list-style (bullet point) */
-  border-radius: 8px;
+  border-radius: 7px;
+}
+#collaboration i {
+  padding: 13px 11px;
+}
+#collaboration :hover {
+  background-color: #4b46da;
+  cursor: pointer;
+  border-radius: 7px;
 }
 #library {
   background: none;
   border: none;
-  cursor: pointer;
-  margin-right: 10px;
+  margin-inline: 4px;
   color: #676767;
-  border: 1px solid #d6d6d6;
-  padding: 10px;
-  border-radius: 8px;
+  border: 1px #d6d6d6;
+  background-color: #ececf4;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: lighter;
+  padding: 12px 10px;
+}
+
+#library:hover {
+  background-color: #d6d5f4;
+  cursor: pointer;
 }
 .fa-book-open {
-  margin-right: 10px;
-  font-family: "Noto Sans", sans-serif;
+  padding-right: 10px;
+  font-family: "Titillium Web", sans-serif;
 }
 .header-text {
   text-align: center;
   font-size: 12px;
   color: #bbbbbb;
   font-family: "Mukta", sans-serif;
+  margin-top: 70px;
 }
 
 /* ----------------------------main-Style-------------------------- */
+#canvas{
+  cursor: grab;
+}
+
 .centered-content {
   display: flex;
-  align-items: stretch; /* Change to move the content up */
+  align-items: center; /* Change to move the content up */
   justify-content: center;
-  height: auto;
-  margin-top: 70px;
+  height: calc(70vh - 60px);
+  width: 40%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  cursor: pointer;
 }
 
 .center-column {
   text-align: center;
-  padding: 20px;
-  cursor: pointer;
 }
 
 /* Heading and sub-heading styles */
 .heading h1 {
-  font-size: 28px;
-  font-weight: 500px;
-  color: #190064;
-  font-family: "Mochiy Pop P One", sans-serif;
-  margin-bottom: 20px;
-}
-.fa-pen-ruler {
-  color: #6965db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 35px;
-  margin-right: 8px;
+  font-weight: 900;
+  color: #190064;
+  font-family: 'Permanent Marker', cursive;
+  margin-bottom: 10px;
+  transform: skewX(20deg);
+  letter-spacing: 0.3mm;
+}
+.pen-ruler {
+  margin-right: 5px;
+  height: 65px;
+  width: 65px;
+  transform: skewX(-20deg);
 }
 .sub-heading h2 {
-  font-size: 18px; /* Increase font size */
+  font-size: 19px; /* Increase font size */
   color: #b8b8b8;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-family: "Over the Rainbow", cursive;
+  letter-spacing: 0.1mm;
 }
 
 /* Unordered list styles */
-.center-column ul {
+.options ul {
   list-style: none;
   padding: 10px;
 }
 
-.center-column ul li {
-  margin-bottom: 20px;
+.options ul li {
+  align-items: center;
   color: #999999;
   font-family: "Mukta", sans-serif;
   text-align: left;
   padding-inline: 30px;
 }
-
-.center-column ul li i {
-  margin-right: 15px;
-  font-size: 15px; /* Adjust the size as needed */
+.options ul li i {
+  margin-right: 14px;
+  font-size: 12px 15px; /* Adjust the size as needed */
 }
-
-.center-column a {
+.options li :hover {
+  background-color: #e9e9fc;
+  border-radius: 7px;
+}
+.options .space a:hover {
+  color: black;
+}
+.options a {
   text-decoration: none;
   font-size: small;
   color: #999999;
@@ -193,28 +247,28 @@ nav ul :hover {
   font-family: "Mukta", sans-serif;
 }
 .gift-icon {
-  -webkit-text-stroke: 0.5px black; /* Add an outline using text-stroke */
-  color: transparent;
+color: transparent;
+-webkit-text-stroke: 0.8px #515154;
+font-weight:bold;
 }
 
-.center-column ul li .space {
+.options ul li .space {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  padding: 10px 25px;
   color: #999999;
+  margin-bottom: 5px;
   font-family: "Mukta", sans-serif;
 }
-
-.center-column ul li .space a {
+.options ul li .space a {
   text-decoration: none;
   color: #999999;
   font-family: "Mukta", sans-serif;
 }
 
-.center-column ul li .space p {
+.options ul li .space p {
   margin: 0;
-  padding-right: 40px;
   font-size: small;
 }
 
@@ -222,8 +276,9 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* bottom: 5px; */
-  margin-top: 20px;
+  position: fixed;
+  bottom: 5px; /* Stick it to the bottom of the viewport */
+  width: 100%;
 }
 
 .f-div {
@@ -232,6 +287,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   bottom: 5px;
+  margin-left: 4px;
 }
 
 /* Style for the individual footer divs */
@@ -240,84 +296,111 @@ footer {
   justify-content: space-between; /* Space the contents within .footer-div1 */
   align-items: center; /* Center align the contents vertically */
   text-align: left;
-  border: 0.5px solid #d6d6d6;
-  padding: 8px;
-  border-radius: 8px;
+  border: 0.5px #d6d6d6;
+  border-radius: 7px;
   background-color: #ececf4;
   cursor: pointer;
 }
 
 .footer-icons {
-  border: 0.5px solid #d6d6d6;
-  padding: 8px;
+  border: 0.5px #d6d6d6;
   border-radius: 8px;
   align-items: center;
   background-color: #ececf4;
-  margin-inline: 10px;
+  margin-right: 10px;
+  margin-left: 5px;
   cursor: pointer;
 }
+
 .footer-icons span {
   color: #505055;
+}
+.footer-icons span i {
+  padding: 12px;
 }
 .footer-icons span .fa-minus {
   font-size: 13px;
   padding-right: 15px;
-  /* font-weight: lighter; */
 }
 .footer-icons span .fa-plus {
   font-size: 13px;
   padding-left: 15px;
+  margin-left: 5px;
   font-weight: lighter;
-}
-.footer-div1 i.fa-redo {
-  margin-left: 30px;
 }
 
 .footer-div1 i {
-  margin: 2px 0;
+  padding: 9px;
 }
-.footer-icons span :hover{
-background-color: #6965db;
+.footer-icons > span .fa-plus:hover {
+  background-color: #d6d5f4;
+  border-radius: 0 7px 7px 0;
 }
-.footer-div1 i.fa-undo,
-.footer-div1 i.fa-redo {
-  font-size: 13px;
+.footer-icons > span .fa-minus:hover {
+  background-color: #d6d5f4;
+  border-radius: 7px 0 0 7px;
+}
+.footer-div1 .redo:hover {
+  background-color: #d6d5f4;
+  border-radius: 0 7px 7px 0;
+}
+.footer-div1 .undo:hover {
+  background-color: #d6d5f4;
+  border-radius: 7px 0 0 7px;
+}
+.footer-div1 i.undo,
+.footer-div1 i.redo {
+  font-size: 18px;
   color: #505055;
-  /* font-weight: lighter; */
 }
 
 /* Style for the collaboration and library buttons in the third div */
 .footer-div3 {
   text-align: right;
   display: flex; /* Make .footer-div1 a flex container */
-  justify-content: space-between; /* Space the contents within .footer-div1 */
+  justify-content: space-between; /*Space the contents within .footer-div1*/
   align-items: center; /* Center align the contents vertically */
   padding: 8px;
-  cursor: pointer;
 }
 
-.collaboration1,
-#library {
+.collaboration1 {
   background: none;
   border: none;
   cursor: pointer;
-  margin-right: 15px;
+  margin-right: 7px;
 }
 
 .collaboration1 i {
-  font-weight: 900;
-  font-size: 18px;
+  font-size: 19px;
   color: #6965db;
+  margin-right: 8px;
+  padding: 5px;
+}
+
+#library1 i {
+  font-size: 17px;
+  color: black;
+  font-weight: 100;
+  padding: 9.5px;
 }
 
 /* Additional styling for the library button */
-#library {
+#library1 {
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
-  cursor: pointer;
-  margin-right: 10px;
+  margin-right: 8px;
   color: #676767;
-  border: 1px solid #d6d6d6;
-  padding: 10px;
-  border-radius: 8px;
+  border: 1px #d6d6d6;
+  border-radius: 7px;
+  background-color: #ececf4;
+}
+#library1:hover {
+  background-color: #d6d5f4;
+  cursor: pointer;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+}
+@media screen and (max-width: 767px) {
 }

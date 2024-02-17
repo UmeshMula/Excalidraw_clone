@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Excalidraw</title>
+    <link rel="icon" type="image/x-icon" href="/images/Picture2.png" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link
       rel="stylesheet"
@@ -10,114 +11,234 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0"
+    />
   </head>
   <body>
-    <header>
-      <div class="left">
-        <button id="menu-btn"><i class="fas fa-bars"></i></button>
-      </div>
-      <div class="middle">
-        <nav>
-          <ul>
-            <li><i class="fas fa-unlock"></i></li>
-            <div class="v-line"></div>
-            <li><i class="fa-regular fa-hand" style="color: #858585"></i></li>
-            <li class="list-item">
-              <i class="fa-solid fa-arrow-pointer" style="color: #5b57d1"></i>
-            </li>
-            <li><i class="fa-regular fa-square"></i></li>
-            <li><i class="fa-solid fa-diamond"></i></li>
-            <li><i class="fa-regular fa-circle"></i></li>
-            <li><i class="fas fa-arrow-right"></i></li>
-            <li>―</li>
-            <li><i class="fa-solid fa-pen"></i></li>
-            <li><i class="fas fa-font"></i></li>
-            <li><i class="fa-regular fa-image"></i></li>
-            <li><i class="fa-solid fa-eraser"></i></li>
-            <div class="v-line"></div>
-            <li>
-              <i class="fa-sharp fa-solid fa-shapes" style="color: #858585"></i>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="right">
-        <button id="collaboration">
-          <i class="fa-solid fa-user-group" style="color: #ffffff"></i>
-        </button>
-        <button id="library">
-          <i class="fa-solid fa-book-open"></i>Library
-        </button>
-      </div>
-    </header>
-    <p class="header-text">
-      To move canvas, hold mouse wheel or spacebar while dragging, or use the
-      hand tool
-    </p>
-    <!-- ----------------main-part------------------ -->
-    <main>
-      <div class="centered-content">
-        <div class="center-column">
-          <div class="heading">
-            <h1><i class="fa-solid fa-pen-ruler"></i> EXCALIDRAW</h1>
+    <div class="total-body">
+      <header>
+        
+        <div class="topper">
+          <div class="left">
+            <button id="menu-btn"><i class="fas fa-bars"></i></button>
           </div>
-          <div class="sub-heading">
-            <h2>All your data is saved locally in your browser.</h2>
-          </div>
-          <ul>
-            <li>
-              <div class="space">
-                <a href="#"><i class="fa-regular fa-folder"></i>Open</a>
-                <p>ctrl+O</p>
-              </div>
-            </li>
-
-            <li>
-              <div class="space">
-                <a href="#"
-                  ><i class="fas fa-question-circle gift-icon"></i>Help</a
+          <div class="middle">
+            <div class="middle-btn">
+              <button>
+                <i class="material-symbols-outlined lock">lock_open</i>
+              </button>
+              <div class="v-line"></div>
+              <button>
+                <i
+                  class="fa-regular fa-hand"
+                  style="color: transparent; -webkit-text-stroke: 0.8px #515154"
+                ></i>
+              </button>
+              <button class="list-item">
+                <span>
+                  <i class="material-symbols-outlined" style="color: #030064"
+                    >arrow_selector_tool<sub class="sn">1</sub></i
+                  ></span
                 >
-                <p>?</p>
-              </div>
-            </li>
-            <li>
-              <a href="#"
-                ><i class="fa-solid fa-user-group gift-icon"></i>Live
-                Collaboration...</a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><i class="fas fa-gift gift-icon"></i>Try Excalidraw Plus</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </main>
+              </button>
+              <button>
+                <span
+                  ><i class="material-symbols-outlined"
+                    >check_box_outline_blank<sub class="sn">2</sub></i
+                  ></span
+                >
+              </button>
+              <button>
+                <span>
+                  <i
+                    class="fa-solid fa-diamond"
+                    style="
+                      color: transparent;
+                      -webkit-text-stroke: 1.3px #515154;
+                    "
+                    ><sub class="sn">3</sub></i
+                  ></span
+                >
+              </button>
+              <button>
+                <span
+                  ><i class="material-symbols-outlined"
+                    >radio_button_unchecked<sub class="sn">4</sub></i
+                  ></span
+                >
+              </button>
+              <button>
+                <span
+                  ><i class="material-symbols-outlined"
+                    >east<sub class="sn">5</sub></i
+                  ></span
+                >
+              </button>
+              <button>
+                <span
+                  ><i class="material-symbols-outlined"
+                    >remove<sub class="sn">6</sub></i
+                  ></span
+                >
+              </button>
+              <button>
+                <span
+                  ><i class="material-symbols-outlined"
+                    >stylus<sub class="sn">7</sub></i
+                  ></span
+                >
+              </button>
+              <button>
+                <span>
+                  <i
+                    class="fas fa-font"
+                    style="
+                      color: transparent;
+                      -webkit-text-stroke: 0.8px #515154;
+                    "
+                    ><sub class="sn">8</sub></i
+                  ></span
+                >
+              </button>
+              <button>
+                <span
+                  ><i class="material-symbols-outlined"
+                    >imagesmode<sub class="sn">9</sub></i
+                  ></span
+                >
+              </button>
+              <button>
+                <span
+                  ><i class="material-symbols-outlined"
+                    >ink_eraser<sub class="sn">0</sub></i
+                  ></span
+                >
+              </button>
+              <div class="v-line"></div>
+              <button>
+                <i
+                  class="fa-sharp fa-solid fa-shapes lock"
+                  style="color: transparent; -webkit-text-stroke: 0.8px #515153"
+                  style="color: #858585"
+                ></i>
+              </button>
+            </div>
+          </div>
 
-  <footer>
-      <div class="f-div">
-        <div class="footer-icons">
-          <span><i class="fa-solid fa-minus"></i></span>
-          <span style="font-size: 15px; margin-inline: 3px;">100%</span>
-          <span><i class="fa-solid fa-plus"></i></span>
+          <div class="right">
+            <button id="collaboration" title="live collaboration...">
+              <i
+                class="fa-solid fa-user-group gift-icon"
+                style="
+                  color: transparent;
+                  -webkit-text-stroke: 0.8px rgb(255, 252, 252);
+                  font-size: 10px;
+                "
+              ></i>
+            </button>
+            <button id="library" title="Library">
+              <span
+                ><i
+                  class="fa-solid fa-book-open"
+                  style="
+                    color: transparent;
+                    -webkit-text-stroke: 1px#1c1c20;
+                    font-weight: bold;
+                  "
+                ></i
+                >Library</span
+              >
+            </button>
+          </div>
+        </div>
+      </header>
+      <p class="header-text">
+        To move canvas, hold mouse wheel or spacebar while dragging, or use the
+        hand tool
+      </p>
+
+      <!-- ----------------main-part------------------ -->
+      <canvas id="canvas"></canvas>
+        <div class="centered-content">
+          <div class="center-column">
+            <div class="heading">
+              <h1>
+                <img src="images/Picture2.png" class="pen-ruler" />Excalidraw
+              </h1>
+            </div>
+            <div class="sub-heading">
+              <h2>All your data is saved locally in your browser.</h2>
+            </div>
+            <div class="options">
+              <ul>
+                <li>
+                  <div class="space">
+                    <a href="#"><i class="fa-regular fa-folder"></i>Open</a>
+                    <p>ctrl+O</p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="space">
+                    <a href="#"
+                      ><i class="fas fa-question-circle gift-icon"></i>Help</a
+                    >
+                    <p>?</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="space">
+                    <a href="#"
+                      ><i class="fa-solid fa-user-group gift-icon"></i>Live
+                      Collaboration...</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="space">
+                    <a href="#"
+                      ><i class="fas fa-gift gift-icon"></i>Try Excalidraw
+                      Plus</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div class="footer-div1">
-          <i class="fa-solid fa-undo"></i>
-          <i class="fa-solid fa-redo"></i>
+      <footer>
+        <div class="f-div">
+          <div class="footer-icons">
+            <span><i class="fa-solid fa-minus"></i></span>
+            <span
+              style="font-size: 15px; margin-inline: 3px; font-weight: lighter"
+              >100%</span
+            >
+            <span><i class="fa-solid fa-plus"></i></span>
+          </div>
+
+          <div class="footer-div1">
+            <i class="material-symbols-outlined undo">undo</i>
+            <i class="material-symbols-outlined redo">redo</i>
+          </div>
         </div>
-      </div>
-      <div class="footer-div3">
-        <button class="collaboration1">
-          <i class="fa-solid fa-shield" style="color: #6965db"></i>
-        </button>
-        <button id="library">
-          <i class="fas fa-question-circle gift-icon"></i>
-        </button>
-      </div>
-    </footer>  
+        <div class="footer-div3">
+          <button class="collaboration1">
+            <i class="material-icons" style="color: #6965db">verified_user</i>
+          </button>
+          <button id="library1">
+            <i class="material-symbols-outlined">help</i>
+          </button>
+        </div>
+      </footer>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
